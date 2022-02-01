@@ -139,9 +139,6 @@ class ingresarAlturaYPeso extends StatefulWidget{
 
 class _ingresarAlturaYPeso extends State<ingresarAlturaYPeso>{
 
-  Color peso = Colors.black;
-  Color altura = Colors.black;
-
   var texto_mujeres = '''
     Tabla del IMC para mujeres
 
@@ -176,7 +173,7 @@ class _ingresarAlturaYPeso extends State<ingresarAlturaYPeso>{
     return Column(
       children: [
         ListTile(
-          leading: Icon(Icons.square_foot, size: 40, color: colorIconoAltura),
+          leading: Icon(Icons.square_foot, size: 40),
           title: Padding(
             padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
             child: TextFormField(
